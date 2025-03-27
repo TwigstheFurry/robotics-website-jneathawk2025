@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>camden</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            $("#hamburger").click(function() {
+                $("body").toggleClass("hamburger");
+            });
+        });
+    </script>
+
+  </head>
+
+<body>
+  <header>Support</header>
+  <hr>
+  <div class="logo">Cam. Inc</div>
+  <div id="hamburger">&nbsp;</div>
+  <nav class="navbar">
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pictures.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="support.html">Support</a></li>
+      </ul>
+  </nav>
+  <div class="box">
+    <div class="text">
+      <form id="survey-form">
+         <label id="name-label">Please put name here!</label>
+        <input id="name" type="name" required placeholder="Name">
+        <br>
+         <label id="email-label">Please put your email here!</label>
+        <input id="email" type="email" required placeholder="Email">
+        <br>
+        <label id="email-label">What do you need help with?</label>
+        <input class="help" id="Help" type="Help" required placeholder="Help">
+        <br>
+        <input class="submit" id="submit" type="submit">
+    </div>
+    <img src="https://mail.google.com/mail/u/0/?ui=2&ik=02badcd5b5&attid=0.5&permmsgid=msg-f:1827121858313119441&th=195b3da64e1ae6d1&view=fimg&realattid=195b3da00a94cef36f15&disp=thd&attbid=ANGjdJ9ZHVmvoRqYsG88YD2w7qpRhx4NqOBsEBN6NuOhBxbjSmE64VEm-QtpeqgNdCk5Wp2dQBAF_sHCRr3OEaE4SpB6-a6ZwZmxyjlYE4GEI_53OOXGg1HDj7MIu-Y&ats=2524608000000&sz=w1920-h953" alt="Racecar" class="image">
+  </div>
+   <footer>&copy Cam. Inc</footer>
+</body>
+
+</html>
