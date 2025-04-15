@@ -1,0 +1,199 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+   background-image: linear-gradient(to right,blue,indigo,violet);
+  background-size: 2250px 2250px;
+  background-position: center;
+  text-align: center;
+}
+
+hr{
+  border-top: 5px solid rebeccapurple;
+  border-bottom: 5px solid rebeccapurple;
+  border-right: 5px solid rebeccapurple;
+  border-left: 5px solid rebeccapurple;
+}
+
+header {
+  font-size: 45px;
+  margin: 50px;
+  margin-top: 0px;
+  background: linear-gradient(violet, rebeccapurple); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* hamburger */
+#hamburger {
+    margin: 10px;
+    position: relative;
+    border-radius: 7px;
+
+    width: 32px;
+    height: 32px;
+    background-image: url(https://imgur.com/3ZvbJfL.png);
+    background-color: violet;
+    background-size: 500px 200px;
+    background-position: -250px -150px;
+   text-align: center;
+    cursor: pointer;
+}
+
+
+
+.box {
+  background-color: rebeccapurple;
+  width: calc(100% - 100px);
+  height: 600px;
+  margin: 50px;
+  border-radius: 10px 10px 60px 60px;
+  overflow: hidden;
+}
+.box .text {
+  width: 50%;
+  float: left;
+}
+
+.box .image {
+  width: auto;
+  max-width: 50%;
+  height: 100%;
+  float: right;
+  margin: 0;
+}
+
+p {
+  font-size: 27px;
+  font-family: "Lucida Console", "Courier New", monospace;
+   color: white;
+}
+
+label {
+  font-size: 21px;
+  font-family: "Lucida Console", "Courier New", monospace;
+   color: white;
+}
+
+input{
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 25px;
+  font-size: 10px;
+}
+
+.help {
+  font-family: "Lucida Console", "Courier New", monospace;
+   color: black;
+  width: 500px;
+  height: 250px;
+  text-align: left;
+}
+
+.submit{
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 150px;
+  height: 35px;
+}
+
+body ol {
+  color: #d6d6d6;
+  font-size: 21.5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background: linear-gradient(#d61515, #eee);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body img {
+ /* margin-left: 400px;*/
+}
+
+
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 0;
+  position:absolute;
+  background-color: darkmagenta;
+  overflow: hidden;
+
+    transition: all 500ms ease, background-color 500ms ease;
+}
+body.hamburger nav {
+  margin: 0;
+  padding: 50px 40px;
+  width: 100%;
+  height: auto;
+  border-radius: 60px 60px 60px 60px;
+
+    transition: all 1500ms ease, background-color 5000ms ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: purple;
+  border-radius: 4px;
+}
+
+footer  {
+  font-size: 13px;
+  margin: 50px;
+  margin-top: 0px;
+  background: linear-gradient(rebeccapurple, violet); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+@media (max-width: 601px){
+  .box {
+    width: calc(100% - 2rem);
+    height: 600px;
+    margin: 1rem;
+    border-radius: 10px 10px 60px 60px;
+    overflow: hidden;
+  }
+  .box .text {
+    width: 100%;
+    float: none;
+  }
+  .box .image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    float: none;
+    margin: 0;
+  }
+}
